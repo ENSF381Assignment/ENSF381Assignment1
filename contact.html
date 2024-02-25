@@ -14,31 +14,55 @@ Submission: Feb 4, 2024
     <title>Contacts</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navigation-bar-cell {
+            text-align: center;
+        }
+        .navigation-bar-link {
+            color: white;
+            text-decoration: none;
+        }
+        .navigation-bar-link:hover {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body>
-<header>
-    <a href="index.html"><img src="favicon.ico" alt="Back home"></a>
+<body style="margin: 0; background: #333">
+<header style="padding: 8px;display: flex; justify-content: space-between; align-items: center;">
+    <a href="index.html"><img style="width: 60%; margin: 12px;" src="favicon.ico" alt="Back home"></a>
+    <div style="text-align: right; margin: 16px">
+        <span style="color: #eee">{Company name}</span>
+    </div>
 </header>
-<div>
-    <a href="login.html" style="position: absolute; top: 8px; right: 8px">Login</a>
-    <a href="index.html" style="text-align: center">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="products.html" style="text-align: center">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<div style="padding: 8px 36px">
+    <table style="width: 100%; table-layout: fixed">
+        <tr>
+            <td class="navigation-bar-cell"><a class="navigation-bar-link" href="index.html">Home</a></td>
+            <td class="navigation-bar-cell"><a class="navigation-bar-link" href="products.html">Products</a></td>
+            <td class="navigation-bar-cell"><a class="navigation-bar-link" href="contact.html">Contact</a></td>
+            <td class="navigation-bar-cell"><a class="navigation-bar-link" href="login.html">Login</a></td>
+        </tr>
+    </table>
 </div>
-<main>
-    <h1>Contacts</h1>
-    <span>Mr. Joshua Maher</span><br>
-    <span>Email: <a href="mailto:joshua.maher@ucalgary.ca">joshua.maher@ucalgary.ca</a></span><br>
-    <span>Phone number: <a href="tel:123-098-7654">123-098-7654</a></span><br><br>
-    <span>Mr. Yuecheng Sun</span><br>
-    <span>Email: <a href="mailto:yuecheng.sun@ucalgary.ca">yuecheng.sun@ucalgary.ca</a></span><br>
-    <span>Phone number: <a href="tel:123-456-7890">123-456-7890</a></span><br><br>
-    <span>Check out our facebook and instagram!</span><br>
-    <a href="https://facebook.com"><img src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="Facebook"></a>
-    &nbsp;
-    <a href="https://instagram.com"><img src="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" alt="Instagram"></a><br>
+<main style="background: #eee; padding: 32px">
+    <div style="border-radius: 20px; background-color: lightgray; padding: 20px; margin: 10px;">
+        <h1>Reach Out to Us</h1>
+        <h2>Email</h2>
+        <span>Email us at: <a href="mailto:yuecheng.sun@ucalgary.ca">joshua.maher@ucalgary.ca</a></span><br>
+        <h2>Phone</h2>
+        <span>Call us at: <a href="tel:+1 123-456-7890"> +1 123-456-7890</a></span><br><br>
+        <h2>Social Media</h2>
+        <span>Contact with us on social media</span><br><br>
+        <a href="https://facebook.com">Facebook</a><br>
+        <a href="https://instagram.com">Instagram</a>
+    </div>
 </main>
-<footer>
-    <p>Copyright 2024 Joshua Maher, Yuecheng Sun. This website is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<footer style="text-align: center; color: #eee">
+    <p>© 2024 {Company name}. All rights reserved</p>
 </footer>
 </body>
 </html>
