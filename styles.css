@@ -1,7 +1,9 @@
-
+/*For all pages*/
+/*Body font*/
 body {
     font-family: Arial, sans-serif;
 }
+/*Navigation bar*/
 .navigation-bar-link {
     color: white;
     text-decoration: none;
@@ -9,4 +11,44 @@ body {
 }
 .navigation-bar-link:hover {
     color: #ccc;
+}
+
+/*For contact page*/
+.contact-method{
+    background: #ddd;
+    padding: 0;
+    margin: 0;
+}
+.contact-method:hover {
+    color: #007BFF;
+}
+
+/*For login page*/
+.labels {
+    display: block;
+    margin: 10px;
+}
+.fields {
+    margin: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn {
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5
+}
+.btn:hover {
+    opacity: 1.0;
+}
+.sign-up-link {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px;
+}
+.sign-up-link:hover {
+    text-decoration: underline;
 }
