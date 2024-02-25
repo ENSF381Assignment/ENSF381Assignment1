@@ -1,1 +1,12 @@
 
+body {
+    font-family: Arial, sans-serif;
+}
+.navigation-bar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.navigation-bar-link:hover {
+    color: #ccc;
+}
