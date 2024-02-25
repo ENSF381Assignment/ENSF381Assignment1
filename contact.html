@@ -14,6 +14,16 @@ Submission: Feb 4, 2024
     <title>Contacts</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-method{
+            background: #ddd;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-method:hover {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
 <header style="background: #333; padding: 20px; margin: 0; display: flex; justify-content: space-between; align-items: center;">
@@ -28,21 +38,22 @@ Submission: Feb 4, 2024
     <a class="navigation-bar-link" href="contact.html">Contact</a>
     <a class="navigation-bar-link" href="login.html">Login</a>
 </div>
-<main style="background: #eee; padding: 32px">
-    <div style="border-radius: 20px; background-color: lightgray; padding: 20px; margin: 10px;">
+<main style="background: #ddd; padding: 32px; display: flex">
+    <div style="border-radius: 10px; background-color: #ddd; padding: 20px; margin: 20px; width: 100%">
         <h1>Reach Out to Us</h1>
+        <!--Putting the <a> tag in a div and change the style of <div> does not change the style of the child of it, so skipping <div>-->
         <h2>Email</h2>
-        <span>Email us at: <a href="mailto:yuecheng.sun@ucalgary.ca">joshua.maher@ucalgary.ca</a></span><br>
+        <span>Email us at: <a class="contact-method" href="mailto:yuecheng.sun@ucalgary.ca">joshua.maher@ucalgary.ca</a></span><br>
         <h2>Phone</h2>
-        <span>Call us at: <a href="tel:+1 123-456-7890"> +1 123-456-7890</a></span><br><br>
+        <span>Call us at: </span><a class="contact-method" href="tel:+1 123-456-7890"> +1 123-456-7890</a><br>
         <h2>Social Media</h2>
         <span>Contact with us on social media</span><br><br>
-        <a href="https://facebook.com">Facebook</a><br>
-        <a href="https://instagram.com">Instagram</a>
+        <a class="contact-method" href="https://facebook.com">Facebook</a><br>
+        <a class="contact-method" href="https://instagram.com">Instagram</a>
     </div>
 </main>
-<footer style="text-align: center; color: #eee">
-    <p>© 2024 {Company name}. All rights reserved</p>
+<footer style="text-align: center; color: white; background: #333; padding: 10px; margin: 0">
+    <p>© 2024 {Company name} co. All rights reserved</p>
 </footer>
 </body>
 </html>
