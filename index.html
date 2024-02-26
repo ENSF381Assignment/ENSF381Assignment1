@@ -17,41 +17,47 @@ Submission: Feb 4, 2024
 </head>
 <body>  
 <header>
-    <img src="images/logo.png" alt="A-band logo" width="25%" style="display:block; margin-left:auto; margin-right:auto;" >
+    <img class="header-logo" src="images/logo.png" alt="A-band logo"> 
+    <span class="header-company-name">A-Band</span>
 </header>
-<div>
-    <a href="products.html" style="text-align: center;">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="contact.html" style="text-align: center;">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="login.html" style="position: absolute; top: 8px; right: 8px">Login</a>
+<div class="navigation-bar">
+    <a class="navigation-bar-link" href="index.html">Home</a>
+    <a class="navigation-bar-link" href="products.html">Products</a>
+    <a class="navigation-bar-link" href="contact.html">Contact</a>
+    <a class="navigation-bar-link" href="login.html">Login</a>
 </div>
 <main>
-    <h1>About Us</h1>
-    <section class="about-us">
-        <p>Located in downtown Calgary, we are a local store that can provide the community for all its musical needs.
-        We offer a wide range of instruments and equipment! If we dont have what you are looking, for feel free to
-        contact us and we will order it for you. </p>
-    </section>
-    <section class="shop-now">
-        <button type="button" style="padding: 2; ">
-            <a href="products.html">Shop Now</a>
-        </button>
-    </section>
-    <h2>Reviews</h2>
-    <section class="customer-reviews">
-        <dl>
-            <dt><u>Brandon - 2 Days ago</u></dt>
-            <dd>Awsome store! Bought an nice guitar from them for my sons birthday, oweners are very friendly! <b>5/5</b></dd><br>
-            <dt><u>Jenny - 5 Days ago</u></dt>
-            <dd>Kind workers and a lovely store. <b>5/5</b></dd><br>
-            <dt><u>Michael - 1 week ago</u></dt>
-            <dd>Was looking for a specific adaptor but they offered to order in store for me instead. Would still recommend people to look around. <b>4/5</b></dd><br>
-            <dt><u>Steph - 2 weeks ago</u></dt>
-            <dd>Came here on opening week to buy some equipment for our school band. Gave us a great deal! <b>5/5</b></dd>
-        </dl>
-    </section>
+    <div class="about-us">
+        <div class="about-us-content">
+            <h2>About us</h2> 
+            <p>Located in downtown Calgary, we are a local store that can provide the community for all its musical needs.
+            We offer a wide range of instruments and equipment! If we dont have what you are looking, for feel free to
+            contact us and we will order it for you. </p>   
+        </div>
+    </div> 
+    
+    <button class="shop-now" type="button">
+        <a href="products.html" class="shop-now-content">Shop Now</a>
+    </button>
+
+    <div class="customer-reviews">
+        <div>
+            <h2>Customer Reviews</h2>
+            <dl>
+                <dt><b>Brandon - 2 Days ago</b></dt>
+                <dd>Awsome store! Bought an nice guitar from them for my sons birthday, oweners are very friendly! <b>5/5</b></dd><br>
+                <dt><b>Jenny - 5 Days ago</b></dt>
+                <dd>Kind workers and a lovely store. <b>5/5</b></dd><br>
+                <dt><b>Michael - 1 week ago</b></dt>
+                <dd>Was looking for a specific adaptor but they offered to order in store for me instead. Would still recommend people to look around. <b>4/5</b></dd><br>
+                <dt><b>Steph - 2 weeks ago</b></dt>
+                <dd>Came here on opening week to buy some equipment for our school band. Gave us a great deal! <b>5/5</b></dd>
+            </dl>
+        </div>
+    </div>
 </main>
 <footer>
-    <p>Copyright 2024 Joshua Maher, Yuecheng Sun. This website is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    <p>© 2024 A-Band co. All rights reserved</p>
 </footer>
 </body>
 </html>

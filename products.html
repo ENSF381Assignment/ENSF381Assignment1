@@ -9,52 +9,77 @@ Submission: Feb 4, 2024
 
 <!DOCTYPE html>
 <html lang="en">
+<body>
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 <header>
-    <a href="index.html"><img src="favicon.ico" alt="Back home"></a>
+    <img class="header-logo" src="images/logo.png" alt="A-band logo"> 
+    <span class="header-company-name">A-Band</span>
 </header>
-<div>
-    <a href="login.html" style="position: absolute; top: 8px; right: 8px">Login</a>
-    <a href="index.html" style="text-align: center">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="contact.html" style="text-align: center;">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="navigation-bar">
+    <a class="navigation-bar-link" href="index.html">Home</a>
+    <a class="navigation-bar-link" href="products.html">Products</a>
+    <a class="navigation-bar-link" href="contact.html">Contact</a>
+    <a class="navigation-bar-link" href="login.html">Login</a>
 </div>
 <main>
-    <h1>Products</h1>
-    <table width="%">
-        <tr>
-            <td>
-                <img src="images/violin.png" alt="Violin image" width="300px" style="border:2px solid black;">
-                <p><b><u>$899.99 - Violin</u></b></p>
-                <button type="button" style="padding: 2px">Add to cart</button><br><br>   
-            </td>
-            <td>
-                <img src="images/guitar.png" alt="Guitar image" width="300px" style="border:2px solid black;">
-                <p><b><u>$599.99 - Guitar</u></b></p>
-                <button type="button" style="padding: 2px">Add to cart</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/drum_set.png" alt="Drum_set image" width="300px" style="border: 2px solid black;">
-                <p><b><u>$1299.99 - Drum set</u></b></p>
-                <button type="button" style="padding: 2px">Add to cart</button>
-            </td>
-            <td>
-                <img src="images/piano.png" alt="Piano image" width="300px" style="border: 2px solid black;">
-                <p><b><u>$1099.99 - Piano</u></b></p>
-                <button type="button" style="padding: 2px">Add to cart</button>
-            </td>
-        </tr>
-    </table>
+    <div class="products-list">
+        <div class="product">
+            <img src="images/violin.png" alt="Violin image">
+            <h2>Violin</h2>
+            <p class="product-price">$899.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/guitar.png" alt="Guitar image">
+            <h2>Guitar</h2>
+            <p class="product-price">$599.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/drum_set.png" alt="Drum_set image">
+            <h2>Drum Set</h2>
+            <p class="product-price">$1299.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/piano.png" alt="Piano image">
+            <h2>Piano</h2>
+            <p class="product-price">$1099.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/electric_guitar.png" alt="Electric guitar image">
+            <h2>Electric Guitar</h2>
+            <p class="product-price">$699.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/trumpet.png" alt="Trumpet image">
+            <h2>Trumpet</h2>
+            <p class="product-price">$599.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/saxophone.png" alt="Saxophone image">
+            <h2>Saxophone</h2>
+            <p class="product-price">$749.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="images/flute.png" alt="flute image">
+            <h2>Flute</h2>
+            <p class="product-price">$399.99</p>
+            <button class="add-to-cart" type="button">Add to cart</button>
+        </div>
+    </div>
 </main>
 <footer>
-    <p>Copyright 2024 Joshua Maher, Yuecheng Sun. This website is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    <p>© 2024 A-band co. All rights reserved</p>
 </footer>
 </body>
 </html>

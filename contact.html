@@ -16,20 +16,18 @@ Submission: Feb 4, 2024
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header style="background: #333; padding: 20px; margin: 0; display: flex; justify-content: space-between; align-items: center;">
-    <a href="index.html"><img style="width: 60%; margin: 12px;" src="favicon.ico" alt="Back home"></a>
-    <div style="text-align: right; margin: 16px">
-        <span style="color: #eee">{Company name}</span>
-    </div>
+<header>
+    <img class="header-logo" src="images/logo.png" alt="A-band logo"> 
+    <span class="header-company-name">A-Band</span>
 </header>
-<div style="display: flex; justify-content: space-around; background: #333; width: 100%">
+    <div class="navigation-bar">
     <a class="navigation-bar-link" href="index.html">Home</a>
     <a class="navigation-bar-link" href="products.html">Products</a>
     <a class="navigation-bar-link" href="contact.html">Contact</a>
     <a class="navigation-bar-link" href="login.html">Login</a>
 </div>
-<main style="background: #ddd; padding: 32px; display: flex">
-    <div style="border-radius: 10px; padding: 20px; margin: 20px; width: 100%">
+<main class="contact-info">
+    <div>
         <h1>Reach Out to Us</h1>
         <!--Putting the <a> tag in a div and change the style of <div> does not change the style of the child of it, so skipping <div>-->
         <h2>Email</h2>
@@ -39,11 +37,12 @@ Submission: Feb 4, 2024
         <h2>Social Media</h2>
         <span>Contact with us on social media</span><br><br>
         <a class="contact-method" href="https://facebook.com">Facebook</a><br>
-        <a class="contact-method" href="https://instagram.com">Instagram</a>
+        <a class="contact-method" href="https://instagram.com">Instagram</a><br>
+        <a class="contact-method" href="https://twitter.com">Twitter</a>
     </div>
 </main>
-<footer style="text-align: center; color: white; background: #333; padding: 10px; margin: 0">
-    <p>© 2024 {Company name} co. All rights reserved</p>
+<footer>
+    <p>© 2024 A-Band co. All rights reserved</p>
 </footer>
 </body>
 </html>
