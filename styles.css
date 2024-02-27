@@ -1,3 +1,12 @@
+/*
+=========================================================
+Name: styles.css
+Assignment 2
+Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
+Submission: Feb 26, 2024
+=========================================================
+*/
+
 /*For all pages*/
 /*Body font*/
 body {
@@ -16,7 +25,7 @@ header {
 }
 
 .header-logo {
-    width: 25%;
+    width: 20%;
     margin: 12px;
 }
 
@@ -132,27 +141,18 @@ footer {
     background: #45A049;
 }
 
-/*
 @media screen and (max-width: 425px) {
     .product {
         width: 25%;
-        padding: 20px;
+        padding: 2px;
         margin: 5px;
 
-    }
-
-    .product-price{
-        color: red;
     }
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
     .product{
         width: 24%;
-    }
-
-    .product-price{
-        color: green;
     }
 }
 
