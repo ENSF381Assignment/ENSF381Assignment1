@@ -1,0 +1,130 @@
+<!--
+=========================================================
+Name: signup.html
+Assignment 2
+Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
+Submission: Feb 26, 2024
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup for A-band</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="util.js"></script>
+    <script>
+        function verify() {
+            clearAlerts(1);
+            let alertCount = 0;
+            let username = document.getElementById('username').value;
+            let password1 = document.getElementById('password-1').value;
+            let password2 = document.getElementById('password-2').value;
+            let email = document.getElementById('email').value;
+            // Check username
+            if (username.length < 3) {
+                displayAlert('Username need to be at least 3 characters long', 1);
+                alertCount++;
+            } else if (username.length > 20) {
+                displayAlert('Username need to be at most 20 characters long', 1);
+                alertCount++;
+            }
+            if ((username.match(/^[a-zA-Z0-9-_]+$/)) == null) {
+                displayAlert('Username should only contain letters(a-z, A-Z), numbers(0-9), hyphens(-) and underscores(_)', 1);
+                alertCount++;
+            }
+            // Assuming username allows lower case letter since the sample user sheet has lower case letter in usernames.
+            if (!(username.length > 0 && username[0].match(/[a-zA-Z]/))) {
+                displayAlert('Username must start with a letter', 1);
+                alertCount++;
+            }
+            // Check password
+            if (password1.length < 8) {
+                displayAlert('Password need to be at least 8 characters long', 1);
+                alertCount++;
+            }
+            let matchResult = password1.match(/[^a-zA-Z0-9!@#$%^&*()\-_=+\[\]{}|;:'",.<>?/`~]/g)
+            if (matchResult) {
+                if (matchResult.length === 1) {
+                    displayAlert(`Special character "${matchResult[0]}" is not allowed`, 1)
+                } else {
+                    displayAlert(`Special characters "${matchResult.join(' ')}" are not allowed`, 1)
+                }
+                alertCount++;
+            }
+            if (!(/[A-Z]/.test(password1))) {
+                displayAlert('Password must contain an upper case letter. ', 1)
+                alertCount++;
+            }
+            if (!(/[a-z]/.test(password1))) {
+                displayAlert('Password must contain a lower case letter. ', 1);
+                alertCount++;
+            }
+            if (!(/[0-9]/.test(password1))) {
+                displayAlert('Password must contain a number. ', 1);
+                alertCount++;
+            }
+            if (!(/[!@#$%^&*()\-_=+\[\]{}|;:'",.<>?/`~]/.test(password1))) {
+                displayAlert('Password must contain one of the following special character: !@#$%^&*()-_=+[]{}|;:\'",.<>?/`~', 1);
+                alertCount++;
+            }
+            if (/ /.test(password1)) {
+                displayAlert('Password should not contain space.', 1);
+                alertCount++;
+            }
+            // Confirm password
+            if (password1 !== password2) {
+                displayAlert("Password don't match.", 1)
+                alertCount++;
+            }
+            // Check email
+            if (/ /.test(email)) {
+                displayAlert('Email should not contain space.', 1);
+                alertCount++;
+            }
+            const emailSplit = email.split('@');
+            if ((emailSplit.length !== 2) || (!(/\./.test(emailSplit[1])))) {
+                displayAlert('Email is not valid', 1);
+                alertCount++;
+            }
+            return alertCount;
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img class="header-logo" src="images/logo.png" alt="A-band logo">
+    <span class="header-company-name">A-Band</span>
+</header>
+<div class="navigation-bar">
+    <a class="navigation-bar-link" href="index.html">Home</a>
+    <a class="navigation-bar-link" href="products.html">Products</a>
+    <a class="navigation-bar-link" href="contact.html">Contact</a>
+    <a class="navigation-bar-link" href="login.html">Login</a>
+</div>
+<main class="login-signup-form" id="main">
+    <div>
+        <form id="login-form" method="post" style="flex-direction: row">
+            <div style="display: inline-block">
+                <label class="labels" for="username">Username: </label>
+                <input class="fields" required name="username" type="text" id="username" placeholder="Enter your username">
+                <label class="labels" for="password-1">Password: </label>
+                <input class="fields" required name="password-1" type="password" id="password-1" placeholder="Enter your password">
+                <label class="labels" for="password-2">Confirm Password: </label>
+                <input class="fields" required name="password-2" type="password" id="password-2" placeholder="Re-enter password">
+                <label class="labels" for="email">Email: </label>
+                <input class="fields" required name="email" type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div style="display: inline-block">
+                <button class="btn" type="button" onclick="verify()">Signup</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>© 2024 A-Band co. All rights reserved</p>
+</footer>
+</body>
+</html>

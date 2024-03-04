@@ -183,8 +183,8 @@ footer {
     color: #007BFF;
 }
 
-/*For login page*/
-.login-form {
+/*For login and sign up page*/
+.login-signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
