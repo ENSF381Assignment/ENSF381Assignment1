@@ -1,9 +1,9 @@
 /*
 =========================================================
 Name: styles.css
-Assignment 2
+Assignment 3
 Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
-Submission: Feb 26, 2024
+Submission: Mar 11, 2024
 =========================================================
 */
 
@@ -168,6 +168,14 @@ footer {
     width: 100%;
 }
 
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
 .remove-item {
     background: gray;
     padding: 10px;
@@ -180,14 +188,6 @@ footer {
 
 .remove-item:hover {
     background-color: #ff0000;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
 }
 
 /*For contact page*/

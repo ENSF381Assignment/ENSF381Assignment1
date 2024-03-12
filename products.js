@@ -1,3 +1,12 @@
+/*
+=========================================================
+Name: products.js
+Assignment 3
+Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
+Submission: Mar 11, 2024
+=========================================================
+*/
+
 function addToCartAndDisplay(productName, productPrice) {
     var existingItem = document.querySelector('.shopping-cart-items [data-name="' + productName + '"]');
     

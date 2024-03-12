@@ -1,3 +1,12 @@
+/*
+=========================================================
+Name: util.js
+Assignment 3
+Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
+Submission: Mar 11, 2024
+=========================================================
+*/
+
 let mainBody;
 
 document.addEventListener('DOMContentLoaded', function() {
