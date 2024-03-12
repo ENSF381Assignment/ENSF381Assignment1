@@ -3,7 +3,7 @@
 Name: products.html
 Assignment 2
 Authors: Joshua Maher (30148153), Yuecheng Sun (30180767)
-Submission: Feb 26, 2024
+Submission: Mar 11, 2024
 =========================================================
 -->
 
@@ -14,6 +14,7 @@ Submission: Feb 26, 2024
     <title>Products</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="products.js"></script>
 </head>
 <body>
 <header>
@@ -26,55 +27,58 @@ Submission: Feb 26, 2024
     <a class="navigation-bar-link" href="contact.html">Contact</a>
     <a class="navigation-bar-link" href="login.html">Login</a>
 </div>
-<main>
-    <div class="products-list">
-        <div class="product">
-            <img src="images/violin.png" alt="Violin image">
-            <h2>Violin</h2>
-            <p class="product-price">$899.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/guitar.png" alt="Guitar image">
-            <h2>Guitar</h2>
-            <p class="product-price">$599.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/drum_set.png" alt="Drum_set image">
-            <h2>Drum Set</h2>
-            <p class="product-price">$1299.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/piano.png" alt="Piano image">
-            <h2>Piano</h2>
-            <p class="product-price">$1099.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/electric_guitar.png" alt="Electric guitar image">
-            <h2>Electric Guitar</h2>
-            <p class="product-price">$699.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/trumpet.png" alt="Trumpet image">
-            <h2>Trumpet</h2>
-            <p class="product-price">$599.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/saxophone.png" alt="Saxophone image">
-            <h3>Saxophone</h3>
-            <p class="product-price">$749.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-        </div>
-        <div class="product">
-            <img src="images/flute.png" alt="flute image">
-            <h2>Flute</h2>
-            <p class="product-price">$399.99</p>
-            <button class="add-to-cart" type="button">Add to cart</button>
+<main class="products-list" id="main">
+    <div class="product">
+        <img src="images/violin.png" alt="Violin image">
+        <h2 class="product-name">Violin</h2>
+        <p class="product-price">$899.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/guitar.png" alt="Guitar image">
+        <h2 class="product-name">Guitar</h2>
+        <p class="product-price">$599.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/drum_set.png" alt="Drum_set image">
+        <h2 class="product-name">Drum Set</h2>
+        <p class="product-price">$1299.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/piano.png" alt="Piano image">
+        <h2 class="product-name">Piano</h2>
+        <p class="product-price">$1099.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/electric_guitar.png" alt="Electric guitar image">
+        <h2 class="product-name">Electric Guitar</h2>
+        <p class="product-price">$699.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/trumpet.png" alt="Trumpet image">
+        <h2 class="product-name">Trumpet</h2>
+        <p class="product-price">$599.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/saxophone.png" alt="Saxophone image">
+        <h3 class="product-name">Saxophone</h3>
+        <p class="product-price">$749.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="product">
+        <img src="images/flute.png" alt="flute image">
+        <h2 class="product-name">Flute</h2>
+        <p class="product-price">$399.99</p>
+        <button class="add-to-cart" type="button">Add to cart</button>
+    </div>
+    <div class="shopping-cart-list">
+        <h2>Shopping Cart</h2>
+        <div class="shopping-cart-items">
         </div>
     </div>
 </main>

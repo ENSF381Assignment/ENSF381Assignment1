@@ -128,7 +128,7 @@ footer {
 }
 
 .add-to-cart {
-    background: #4CAF50;
+    background: gray;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
@@ -162,6 +162,33 @@ footer {
     }
 }
 
+.shopping-cart-list {
+    background: #ddd;
+    text-align: center;
+    width: 100%;
+}
+
+.remove-item {
+    background: gray;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.remove-item:hover {
+    background-color: #ff0000;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
 
 /*For contact page*/
 .contact-info {
