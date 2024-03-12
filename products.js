@@ -43,9 +43,9 @@ function addToCartAndDisplay(productName, productPrice) {
         });
 
         cartItem.appendChild(itemName);
-        cartItem.appendChild(document.createTextNode(' - '));
+        cartItem.appendChild(document.createTextNode('\u00A0-\u00A0'));
         cartItem.appendChild(itemPrice);
-        cartItem.appendChild(document.createTextNode(' - '));
+        cartItem.appendChild(document.createTextNode('\u00A0-\u00A0'));
         cartItem.appendChild(itemQuantity);
         cartItem.appendChild(removeButton);
         
